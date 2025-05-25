@@ -1,0 +1,95 @@
+h1{
+    text-align: center ;
+}
+.projetos{
+    text-align: center;
+}
+
+.contatos{
+    padding-left: 10px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px 40px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  font-family: 'Arial', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+header a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+header a:hover {
+  background: rgba(0,0,0,0.07);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.conteudo, .projetos {
+  flex: 1;
+}
+
+footer {
+  width: 100%;
+  margin-top: auto;
+  background: rgba(255,255,255,0.7);
+  padding: 10px 0;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 4vw;
+    font-size: 16px;
+  }
+  header a {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+  body {
+    padding-top: 110px;
+  }
+  .projetos img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100vw;
+  }
+  .projetos, .contatos {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    font-size: 12px;
+    padding: 5px 2px;
+  }
+  body {
+    padding-top: 130px;
+  }
+}
+
