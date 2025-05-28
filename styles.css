@@ -10,10 +10,10 @@ h1{
 }
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Centraliza os links */
   align-items: center;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 80px; /* Aumente ou diminua conforme desejar */
   padding: 20px 40px;
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.1);
@@ -117,6 +117,14 @@ footer .contatos a:hover {
     text-align: center;
     padding-left: 0;
   }
+  .apresentacao {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .apresentacao p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 500px) {
@@ -169,7 +177,35 @@ footer .contatos a:hover {
       text-decoration: none;
       color: inherit;
     }
+p{
+  text-align: center;
+  padding: 200px;
+  padding-top: 10px;
 
-    <a href="https://www.linkedin.com/in/artur-trajano-medeiros-1146ab332/">🔗 LinkedIn</a>
-<a href="https://github.com/TrajanoMedeiros">💻 GitHub</a>
-<a href="">🐧 VivaOLinux</a>
+}
+.apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.apresentacao p {
+  flex: 2;
+  min-width: 220px;
+  text-align: left;
+  margin: 0;
+}
+
+.foto-pessoal {
+  flex: 1;
+  max-width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
